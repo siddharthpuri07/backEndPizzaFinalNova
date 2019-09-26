@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ./header.ejs %>
+<body>
+  <form action = '/api/dictionary' method = 'POST' >
+      <div class="row">
+          <div class="input-field col s12">
+            <input name = 'wordName' placeholder="Placeholder" id="first_name" type="text" class="validate">
+            <label for="first_name">Word Name</label>
+          </div>
+         
+        </div>
+        
+  <div class="row">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea name = 'wordMeaning' id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+        </div>
+    </div>
+
+
+    <button type = 'submit' class = 'btn'>  Add word</button>
+
+  </form>
+
+
+
+        
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

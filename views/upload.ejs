@@ -1,0 +1,31 @@
+ <div class ='container'>
+     <h1>File Upload</h1>
+    <%= typeof msg !='undefined' ? msg :  '' %> 
+   
+    <input type = 'text' >
+   
+    <div class="file-field input-field">
+      <div class="btn grey">
+        <span>File</span>
+        <input name = 'myImage' type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+      </div>
+    </div>
+
+    <div class="file-field input-field">
+        <div class="btn grey">
+          <span>File</span>
+          <input name = 'audioFiles' type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Audio file">
+        </div>
+      </div>
+    
+  <br>
+  <div>
+  <img class="responsive-img" style = 'width : 200px ; height : 200px'  src = "<%= typeof file !='undefined' ? file :  '' %> "  >
+</div>   
+</div>
